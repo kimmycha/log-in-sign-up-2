@@ -1,0 +1,578 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.753);
+    border-radius: 0px;
+}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(33, 51, 17, 0.822);
+    border-radius: 10px;
+}
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(198, 26, 2); 
+}
+
+body{
+    background-image: url(img/bg.jpg);
+}
+
+.navbar {
+    background-color: rgba(33, 51, 17, 0.822);
+    box-shadow: 4px 4px 6px rgba(17, 32, 4, 0.692)
+}
+
+.nav-link {
+    color: rgba(255, 243, 220, 0.774);
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+}
+
+.nav-link:hover {
+    color: rgb(255, 243, 220);
+}
+
+.img-container {
+    position: absolute;
+    top: 50%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+}
+
+.img {
+    height: 100px;
+}
+
+.demo {
+  position:absolute;
+  width:100%;
+  top:0;
+  bottom: 0;
+}
+
+.carousel-inner {
+  transition-timing-function: ease-in;
+}
+
+
+.container {
+    width: 50%;
+}
+
+#ShopNow {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(196, 51, 32, 0.37);
+    color: rgba(255, 243, 220, 0.418);
+    font-size: 16px;
+    padding: 5px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#ShopNow:hover {
+    background-color: rgb(198, 26, 2);
+    color: rgb(255, 243, 220)
+}
+
+.fa-user {
+    color: rgba(255, 243, 220, 0.774);
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 18px;
+}
+
+.fa-user:hover {
+    color: rgb(255, 243, 220);
+}
+
+.fa-cart-shopping {
+    color: rgba(255, 243, 220, 0.774);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+}
+
+.fa-cart-shopping:hover {
+    color: rgb(255, 243, 220);
+}
+
+.container-fluid {
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 1850px;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
+    max-width: 950px;
+    background: transparent;
+    border: none;
+}
+
+#Read {
+    background-color: rgba(196, 51, 32, 0.37);
+    color: rgba(255, 243, 220, 0.418);
+    font-size: 16px;
+    padding: 5px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#Read:hover {
+    background-color: rgb(198, 26, 2);
+    color: rgb(255, 243, 220)
+}
+
+h2 {
+    color: rgb(255, 243, 220);
+    padding-bottom: 0%;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h5 {
+    color: rgb(255, 243, 220);
+    padding-bottom: 0%;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+p {
+    color: rgb(255, 243, 220);
+    font-size: 16px;
+    padding-top: 10px;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h3 {
+    color: rgb(255, 243, 220);
+    padding-bottom: 0%;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h4 {
+    color: rgb(255, 243, 220);
+    margin-top: 0%;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    color: rgb(255, 243, 220);
+    padding-bottom: 0%;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container-expand-lg {
+    margin-bottom: 5%;
+}
+
+div, form, input, select, textarea, label {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+}
+
+@import "compass/css3";
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+  
+  input, textarea {
+     border:0; outline:0; 
+     padding: 1em;
+     border-radius: 8px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: "Urbanist", sans-serif;
+     box-shadow: 0 1px 1px black, 0.1;
+     resize: none;
+     background-color: rgba(255, 251, 244, 0.904);
+}
+  
+  #input-submit {
+     color: rgba(255, 243, 220, 0.418); 
+     background:  rgba(196, 51, 32, 0.37);
+     cursor: pointer;
+}
+
+#input-submit:hover {
+    background-color: rgb(198, 26, 2);
+    color: rgb(255, 243, 220)
+}
+  
+  textarea {
+      height: 126px;
+      background-color: rgba(255, 251, 244, 0.904)
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+#contacts {
+    margin-bottom: 15%;
+}
+
+#footer {
+    background-color: rgba(33, 51, 17, 0.692);
+}
+
+#texts {
+    color: rgb(255, 243, 220);
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+}
+
+#icons {
+    color: rgba(255, 243, 220, 0.774);
+}
+
+#icons:hover {
+    color: rgb(255, 243, 220);
+}
+
+#logofooter {
+    max-height: 150px;
+    position: relative;
+}
+
+#parag {
+    color: rgb(255, 243, 220);
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+}
+
+h6 {
+    color: rgb(255, 243, 220);
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#menu-container {
+    justify-content: center;
+    align-content: center;
+}
+
+#menu {
+    margin-top: 1%;
+    margin-left: 0%;
+    padding: 0%
+}
+
+#menu-row {
+    justify-content: center;
+    align-content: center;
+}
+
+#menu-sub {
+    margin-left: 35%;
+}
+
+#card-align {
+    text-align: right;
+}
+
+#imgn {
+    max-width: 1080;
+    max-height: max-content;
+}
+
+.productmenu-card {
+    background-color: transparent;
+    max-width: 350px;
+    margin-bottom: 30%;
+    align-content: center;
+    padding-left: 12%;
+}
+
+#menu-card {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 3%;
+    max-width: 1080;
+    padding: 20px 5px 50px 5px;
+}
+
+.card-img-top {
+    border-radius: 6px;
+}
+
+#menu-button {
+    background-color: rgba(196, 51, 32, 0.37);
+    color: rgba(255, 243, 220, 0.418);
+    font-size: 16px;
+    padding: 5px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#menu-button:hover {
+    background-color: rgb(198, 26, 2);
+    color: rgb(255, 243, 220)
+}
+
+#menu-photo {
+    margin-bottom: 10%;
+}
+
+#menu-p {
+    text-align: justify;
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    height: 500px;
+    width: 460px;
+    background-color: rgba(124, 32, 32, 0.459);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.form-sign-up {
+    height: 430px;
+    width: 460px;
+    background-color: rgba(124, 32, 32, 0.459);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 55%;
+    left: 50%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.sign-up {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 93%;
+    left: 50%;
+}
+
+.form *{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    color: rgb(255, 243, 220);
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.form-sign-up * {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    color: rgb(255, 243, 220);
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 10px;
+    text-align: center;
+    color: rgb(255, 243, 220);
+    padding-bottom: 0%;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+.form-sign-up h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 10px;
+    text-align: center;
+    color: rgb(255, 243, 220);
+    padding-bottom: 0%;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+#form-label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.log-in-input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 8px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder{
+    color: #202020;
+}
+
+#logInButton{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 80px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: rgb(255, 243, 220);
+  text-align: center;
+}
+
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+
+.social .fb{
+  margin-left: 25px;
+}
+
+.social i{
+  margin-right: 4px;
+}
+
+.registerbtn {
+    background-color: rgba(33, 51, 17, 0.822);
+    color: rgba(255, 243, 220, 0.774);
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-radius: 8px;
+    margin-bottom: 10%;
+}
+
+.registerbtn:hover {
+    background-color: rgb(38, 63, 17);
+    color:rgb(255, 243, 220);
+}
+
+.secretContent {
+    display: none;
+}
